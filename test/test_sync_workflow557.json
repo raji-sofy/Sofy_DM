@@ -2,7 +2,7 @@
   "id" : "316c0814-8dce-4379-b249-4d610a1184dd",
   "name" : "test_sync_workflow557",
   "description" : "",
-  "status" : "DONE",
+  "status" : "Synced",
   "errors" : "",
   "active" : true,
   "tenantName" : "Rossi Orders Sandbox   (10408) (US-API-Sandbox)",
@@ -10,13 +10,23 @@
   "environment" : "US-API-Sandbox",
   "createdBy" : "Esteban   Felix ",
   "updatedBy" : "Esteban   Felix ",
-  "createdOn" : "2024-07-22T12:42:29.589Z",
+  "createdOn" : "2024-07-22T12:44:16.187Z",
   "type" : "Others",
-  "repo" : false,
+  "repo" : true,
   "connectorId" : null,
   "lessThanMaxPC" : false,
   "structurePresent" : true,
-  "repoDetails" : null,
+  "repoDetails" : {
+    "id" : "d2b384b4-d158-4271-ba09-580ef07476bc",
+    "orgName" : "raji-sofy",
+    "repoName" : "Sofy_DM",
+    "branchName" : "main",
+    "path" : "test",
+    "commitMessage" : "test_before_sync",
+    "error" : null,
+    "status" : "UPLOADED",
+    "commitId" : "4541b38baa8b837e1ed131335d6c71588de539f7"
+  },
   "content" : {
     "settings" : [ ],
     "taxation" : [ ],
@@ -13892,7 +13902,7 @@
         "featureDisabled" : false
       },
       "response" : [ {
-        "id" : "099b7739-8e70-46ce-9da4-6e3b9503b8b8",
+        "id" : "7f8b4306-19db-4c40-9378-8fe80ee1311b",
         "key" : "Resume Subscriptions for Accounts with Zero Balance Limit 1_0.0.1",
         "segregationKey" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
         "componentType" : "WorkFlows",
@@ -13946,7 +13956,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "b27a1bbd-4114-4090-b445-74daa7c89953",
+        "id" : "bd060520-f941-4e53-aed4-8889b25ceafc",
         "key" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1_0.0.1",
         "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
         "componentType" : "WorkFlows",
@@ -14000,7 +14010,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "26c36ab8-e2e6-4fb0-878b-9f788b533c12",
+        "id" : "a4d82c17-4f11-4bcd-ad70-e8ef334845e3",
         "key" : "Invoice 30 Days Past Due, Account Summary_0.0.1",
         "segregationKey" : "Invoice 30 Days Past Due, Account Summary",
         "componentType" : "WorkFlows",
@@ -14054,124 +14064,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "7ade56de-6143-4eb4-b6ac-dfc92fb99bdc",
-        "key" : "C19: Credit Invoices_0.0.1",
-        "segregationKey" : "C19: Credit Invoices",
-        "componentType" : "WorkFlows",
-        "url" : "266",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 266,
-          "name" : "C19: Credit Invoices",
-          "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : false,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2022-03-09T16:17:43.247-08:00",
-          "updatedAt" : "2022-03-09T16:17:43.247-08:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 266,
-            "name" : "C19: Credit Invoices",
-            "definitionId" : 266,
-            "definitionName" : "C19: Credit Invoices",
-            "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : false,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2022-03-09T16:17:43.247-08:00",
-            "updatedAt" : "2022-03-09T16:17:43.247-08:00",
-            "priority" : "Medium",
-            "status" : "Inactive",
-            "inputFields" : [ {
-              "index" : "0",
-              "datatype" : "File-Field",
-              "required" : true,
-              "callout_id" : "",
-              "field_name" : "InvoicesToCredit",
-              "instruction" : "",
-              "object_name" : "Files"
-            }, {
-              "index" : "1",
-              "default" : "",
-              "datatype" : "Text",
-              "required" : true,
-              "callout_id" : "",
-              "field_name" : "EmailToNotify",
-              "instruction" : "",
-              "object_name" : "Workflow"
-            } ],
-            "created_by" : {
-              "work_email" : "efelix@zuora.com",
-              "created_at" : "2019-07-26T21:54:06.523-07:00",
-              "updated_at" : "2024-07-15T22:48:09.360-07:00"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ {
-            "id" : 266,
-            "name" : "C19: Credit Invoices",
-            "definitionId" : 266,
-            "definitionName" : "C19: Credit Invoices",
-            "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : false,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2022-03-09T16:17:43.247-08:00",
-            "updatedAt" : "2022-03-09T16:17:43.247-08:00",
-            "priority" : "Medium",
-            "status" : "Inactive",
-            "inputFields" : [ {
-              "index" : "0",
-              "datatype" : "File-Field",
-              "required" : true,
-              "callout_id" : "",
-              "field_name" : "InvoicesToCredit",
-              "instruction" : "",
-              "object_name" : "Files"
-            }, {
-              "index" : "1",
-              "default" : "",
-              "datatype" : "Text",
-              "required" : true,
-              "callout_id" : "",
-              "field_name" : "EmailToNotify",
-              "instruction" : "",
-              "object_name" : "Workflow"
-            } ],
-            "created_by" : {
-              "work_email" : "efelix@zuora.com",
-              "created_at" : "2019-07-26T21:54:06.523-07:00",
-              "updated_at" : "2024-07-15T22:48:09.360-07:00"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          } ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
-      }, {
-        "id" : "581044ea-6180-4a34-9fd0-e2b53d8b752f",
+        "id" : "126fa4bb-4551-4558-ba15-55cb5eb99c58",
         "key" : "Chargebacks -> Write Off Invoice + Cancel Subscription_0.0.1",
         "segregationKey" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
         "componentType" : "WorkFlows",
@@ -14225,7 +14118,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "522d5a28-0d6a-4012-894d-933f7e7143c9",
+        "id" : "e3644de1-ce50-425e-b036-4baa8f02f641",
         "key" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 _0.0.1",
         "segregationKey" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
         "componentType" : "WorkFlows",
@@ -14279,7 +14172,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "355d72e5-e7d4-4910-be6a-7caea9cb6424",
+        "id" : "25562154-8e8c-4143-a8f4-0bb6407722e0",
         "key" : "Uplift Prices for a Subscription_0.0.1",
         "segregationKey" : "Uplift Prices for a Subscription",
         "componentType" : "WorkFlows",
@@ -14380,7 +14273,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "c334be3a-80ca-4b07-89a6-9f70355c1c84",
+        "id" : "9ca66cc9-2405-4232-9b02-af6ec2ba74fb",
         "key" : "Uplift Prices for multiple Subscriptions_0.0.1",
         "segregationKey" : "Uplift Prices for multiple Subscriptions",
         "componentType" : "WorkFlows",
@@ -14444,7 +14337,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "88e99bcf-d9e4-4e5e-bcef-02a5bf2e79aa",
+        "id" : "8244a2ec-42e0-4621-85b9-71fbc552b3fd",
         "key" : "Test 342893_0.0.1",
         "segregationKey" : "Test 342893",
         "componentType" : "WorkFlows",
@@ -14725,7 +14618,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "ae493383-3179-42dd-8a00-c021d6358900",
+        "id" : "3d4c8571-2411-47ea-81a8-36d26418f058",
         "key" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1_0.0.1",
         "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
         "componentType" : "WorkFlows",
@@ -14806,7 +14699,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "cbcf3a56-c434-4eb4-9909-d4b8631a1fbb",
+        "id" : "6d4d261b-525e-4e61-9c62-a0df2f5bde8a",
         "key" : "Apply Late Fee to all Subscriptions for Accounts > 1 Days Overdue Limit 1_0.0.1",
         "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 1 Days Overdue Limit 1",
         "componentType" : "WorkFlows",
@@ -14921,7 +14814,124 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "98fc22ed-a024-474a-9ebd-f91299f6b95c",
+        "id" : "303c5ab8-4c1d-4408-b76e-bc5c8ddf7436",
+        "key" : "C19: Credit Invoices_0.0.1",
+        "segregationKey" : "C19: Credit Invoices",
+        "componentType" : "WorkFlows",
+        "url" : "266",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 266,
+          "name" : "C19: Credit Invoices",
+          "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : false,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2022-03-09T16:17:43.247-08:00",
+          "updatedAt" : "2022-03-09T16:17:43.247-08:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 266,
+            "name" : "C19: Credit Invoices",
+            "definitionId" : 266,
+            "definitionName" : "C19: Credit Invoices",
+            "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : false,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2022-03-09T16:17:43.247-08:00",
+            "updatedAt" : "2022-03-09T16:17:43.247-08:00",
+            "priority" : "Medium",
+            "status" : "Inactive",
+            "inputFields" : [ {
+              "index" : "0",
+              "datatype" : "File-Field",
+              "required" : true,
+              "callout_id" : "",
+              "field_name" : "InvoicesToCredit",
+              "instruction" : "",
+              "object_name" : "Files"
+            }, {
+              "index" : "1",
+              "default" : "",
+              "datatype" : "Text",
+              "required" : true,
+              "callout_id" : "",
+              "field_name" : "EmailToNotify",
+              "instruction" : "",
+              "object_name" : "Workflow"
+            } ],
+            "created_by" : {
+              "work_email" : "efelix@zuora.com",
+              "created_at" : "2019-07-26T21:54:06.523-07:00",
+              "updated_at" : "2024-07-15T22:48:09.360-07:00"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ {
+            "id" : 266,
+            "name" : "C19: Credit Invoices",
+            "definitionId" : 266,
+            "definitionName" : "C19: Credit Invoices",
+            "description" : "Please see https://knowledgecenter.zuora.com/Covid-19_Response_Workflow_Guide/Credit_Invoices for details",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : false,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2022-03-09T16:17:43.247-08:00",
+            "updatedAt" : "2022-03-09T16:17:43.247-08:00",
+            "priority" : "Medium",
+            "status" : "Inactive",
+            "inputFields" : [ {
+              "index" : "0",
+              "datatype" : "File-Field",
+              "required" : true,
+              "callout_id" : "",
+              "field_name" : "InvoicesToCredit",
+              "instruction" : "",
+              "object_name" : "Files"
+            }, {
+              "index" : "1",
+              "default" : "",
+              "datatype" : "Text",
+              "required" : true,
+              "callout_id" : "",
+              "field_name" : "EmailToNotify",
+              "instruction" : "",
+              "object_name" : "Workflow"
+            } ],
+            "created_by" : {
+              "work_email" : "efelix@zuora.com",
+              "created_at" : "2019-07-26T21:54:06.523-07:00",
+              "updated_at" : "2024-07-15T22:48:09.360-07:00"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          } ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
+      }, {
+        "id" : "78445282-81ba-4a9c-aad5-5f72d133f676",
         "key" : "Write Off & Cancel Sub Workflow_0.0.1",
         "segregationKey" : "Write Off & Cancel Sub Workflow",
         "componentType" : "WorkFlows",
@@ -15100,7 +15110,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "b56a4db1-7c51-4dc8-b7ad-2c10cfbca128",
+        "id" : "bb93b02d-6b7c-48c1-9a5e-ba9788206bf9",
         "key" : "Ticket 362841_0.0.1",
         "segregationKey" : "Ticket 362841",
         "componentType" : "WorkFlows",
@@ -15181,7 +15191,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "feccafe7-1763-46b7-86d0-7ae090a91965",
+        "id" : "9f608413-a2b2-477e-b4a8-0447556671f2",
         "key" : "Send multiple Invoices in one Email_0.0.1",
         "segregationKey" : "Send multiple Invoices in one Email",
         "componentType" : "WorkFlows",
@@ -15280,7 +15290,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "4c7cdba4-cfe6-40f5-ae62-7e9247a82d94",
+        "id" : "00e4fb0f-421a-4093-af31-6436b1aee5e6",
         "key" : "Multiple Invoices in single Email_0.0.1",
         "segregationKey" : "Multiple Invoices in single Email",
         "componentType" : "WorkFlows",
@@ -15379,7 +15389,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "64d06f7f-f174-4b93-8b87-aa3b16949f2b",
+        "id" : "8384b9b6-b967-4947-8db0-5a7d0b61669c",
         "key" : "363588 Test_0.0.1",
         "segregationKey" : "363588 Test",
         "componentType" : "WorkFlows",
@@ -15443,7 +15453,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "8a88ca30-5755-4221-b4eb-310431ed5c1b",
+        "id" : "23d9ce3a-6079-4838-9ab5-e16d2e32d686",
         "key" : "Subscription Cancellation Workflow_0.0.1",
         "segregationKey" : "Subscription Cancellation Workflow",
         "componentType" : "WorkFlows",
@@ -15634,7 +15644,104 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "74c95b36-40a3-4d64-b6bf-eb53507c26d9",
+        "id" : "3b47d0a2-c80c-450c-a187-1e450fb7db30",
+        "key" : "Create Lockbox Payments_0.0.1",
+        "segregationKey" : "Create Lockbox Payments",
+        "componentType" : "WorkFlows",
+        "url" : "701",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 701,
+          "name" : "Create Lockbox Payments",
+          "description" : "Creates payments in Zuora for Invoices and Quotes.",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : false,
+          "scheduledTrigger" : false,
+          "interval" : "",
+          "timezone" : "",
+          "createdAt" : "2024-02-21T23:10:39.072-08:00",
+          "updatedAt" : "2024-02-21T23:10:39.072-08:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 6346,
+            "name" : "Create Lockbox Payments",
+            "definitionId" : 701,
+            "definitionName" : "Create Lockbox Payments",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : false,
+            "scheduledTrigger" : false,
+            "interval" : "",
+            "timezone" : "",
+            "createdAt" : "2024-02-21T23:10:39.072-08:00",
+            "updatedAt" : "2024-02-21T23:10:39.072-08:00",
+            "priority" : "Medium",
+            "status" : "Inactive",
+            "inputFields" : [ {
+              "index" : "0",
+              "default" : "",
+              "datatype" : "File-Field",
+              "required" : true,
+              "field_name" : "ImportFile",
+              "object_name" : "Files"
+            } ],
+            "created_by" : {
+              "work_email" : "xi.luo@zuora.com",
+              "created_at" : "2020-11-27T00:44:14.573-08:00",
+              "updated_at" : "2024-04-21T23:23:09.323-07:00"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ {
+            "id" : 6346,
+            "name" : "Create Lockbox Payments",
+            "definitionId" : 701,
+            "definitionName" : "Create Lockbox Payments",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : false,
+            "scheduledTrigger" : false,
+            "interval" : "",
+            "timezone" : "",
+            "createdAt" : "2024-02-21T23:10:39.072-08:00",
+            "updatedAt" : "2024-02-21T23:10:39.072-08:00",
+            "priority" : "Medium",
+            "status" : "Inactive",
+            "inputFields" : [ {
+              "index" : "0",
+              "default" : "",
+              "datatype" : "File-Field",
+              "required" : true,
+              "field_name" : "ImportFile",
+              "object_name" : "Files"
+            } ],
+            "created_by" : {
+              "work_email" : "xi.luo@zuora.com",
+              "created_at" : "2020-11-27T00:44:14.573-08:00",
+              "updated_at" : "2024-04-21T23:23:09.323-07:00"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          } ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
+      }, {
+        "id" : "7ef71f02-dbff-4e68-abc7-d534e7c95dd4",
         "key" : "SNP_ZUO_CoolingOffDeactivation_0.0.1",
         "segregationKey" : "SNP_ZUO_CoolingOffDeactivation",
         "componentType" : "WorkFlows",
@@ -15733,7 +15840,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "09cf8203-69b5-4255-92b9-2059b0ecc1b5",
+        "id" : "818df5b4-e341-45d8-a5f9-a85c53e054f1",
         "key" : "SNP_ZUO_CoolingOffDeactivation_TEST_0.0.1",
         "segregationKey" : "SNP_ZUO_CoolingOffDeactivation_TEST",
         "componentType" : "WorkFlows",
@@ -15796,7 +15903,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "7165e6c2-8005-4994-8015-708abb03035d",
+        "id" : "f2e130e3-19c2-4789-9ca0-09b78824fe1b",
         "key" : "myworkflow_0.0.1",
         "segregationKey" : "myworkflow",
         "componentType" : "WorkFlows",
@@ -15877,7 +15984,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "00183c9b-0258-4eba-9fa3-7700f585ac57",
+        "id" : "87aeac67-8759-4f92-bc12-7a5f88098142",
         "key" : "test ui role_0.0.1",
         "segregationKey" : "test ui role",
         "componentType" : "WorkFlows",
@@ -15966,7 +16073,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "45836fcc-6ffb-4637-b1b6-bb7537cfde32",
+        "id" : "2e1b1d92-4b74-498e-b544-e9b4af72b9af",
         "key" : "acc-standard_0.0.1",
         "segregationKey" : "acc-standard",
         "componentType" : "WorkFlows",
@@ -16055,7 +16162,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "3d6f15cd-f67a-4f86-bddb-8b6f97f16533",
+        "id" : "34d9c52b-b86c-4d12-b40e-03f60cb2f25b",
         "key" : "acc-custom_0.0.1",
         "segregationKey" : "acc-custom",
         "componentType" : "WorkFlows",
@@ -16144,7 +16251,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "04b83128-eb7b-439a-b4e3-9712f18ad5e6",
+        "id" : "f68483d8-fe7e-43b8-b212-15ada25567ef",
         "key" : "acc-empty_0.0.1",
         "segregationKey" : "acc-empty",
         "componentType" : "WorkFlows",
@@ -16233,7 +16340,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "8786895d-a1a4-43ee-8810-37a6ae24c4b6",
+        "id" : "f95df800-10f3-45df-8b6a-f0c2dfa38a45",
         "key" : "acc-both_0.0.1",
         "segregationKey" : "acc-both",
         "componentType" : "WorkFlows",
@@ -16322,7 +16429,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "92e917a7-9917-4df7-a446-e2300a03a378",
+        "id" : "92f92588-88b7-4341-855a-88a4ac9b5482",
         "key" : "Carrier Tip Export_0.0.1",
         "segregationKey" : "Carrier Tip Export",
         "componentType" : "WorkFlows",
@@ -16403,7 +16510,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "50408e3e-fe2e-4fb2-aaa5-c6ee1b7bf948",
+        "id" : "3fe53830-c5e9-47ce-9e05-b99f193507f8",
         "key" : "Cancel & Refund Subscription_459928_0.0.1",
         "segregationKey" : "Cancel & Refund Subscription_459928",
         "componentType" : "WorkFlows",
@@ -16502,104 +16609,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "f5a79019-44db-4df2-8826-f21d3ac0e264",
-        "key" : "Create Lockbox Payments_0.0.1",
-        "segregationKey" : "Create Lockbox Payments",
-        "componentType" : "WorkFlows",
-        "url" : "701",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 701,
-          "name" : "Create Lockbox Payments",
-          "description" : "Creates payments in Zuora for Invoices and Quotes.",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : false,
-          "scheduledTrigger" : false,
-          "interval" : "",
-          "timezone" : "",
-          "createdAt" : "2024-02-21T23:10:39.072-08:00",
-          "updatedAt" : "2024-02-21T23:10:39.072-08:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 6346,
-            "name" : "Create Lockbox Payments",
-            "definitionId" : 701,
-            "definitionName" : "Create Lockbox Payments",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : false,
-            "scheduledTrigger" : false,
-            "interval" : "",
-            "timezone" : "",
-            "createdAt" : "2024-02-21T23:10:39.072-08:00",
-            "updatedAt" : "2024-02-21T23:10:39.072-08:00",
-            "priority" : "Medium",
-            "status" : "Inactive",
-            "inputFields" : [ {
-              "index" : "0",
-              "default" : "",
-              "datatype" : "File-Field",
-              "required" : true,
-              "field_name" : "ImportFile",
-              "object_name" : "Files"
-            } ],
-            "created_by" : {
-              "work_email" : "xi.luo@zuora.com",
-              "created_at" : "2020-11-27T00:44:14.573-08:00",
-              "updated_at" : "2024-04-21T23:23:09.323-07:00"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ {
-            "id" : 6346,
-            "name" : "Create Lockbox Payments",
-            "definitionId" : 701,
-            "definitionName" : "Create Lockbox Payments",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : false,
-            "scheduledTrigger" : false,
-            "interval" : "",
-            "timezone" : "",
-            "createdAt" : "2024-02-21T23:10:39.072-08:00",
-            "updatedAt" : "2024-02-21T23:10:39.072-08:00",
-            "priority" : "Medium",
-            "status" : "Inactive",
-            "inputFields" : [ {
-              "index" : "0",
-              "default" : "",
-              "datatype" : "File-Field",
-              "required" : true,
-              "field_name" : "ImportFile",
-              "object_name" : "Files"
-            } ],
-            "created_by" : {
-              "work_email" : "xi.luo@zuora.com",
-              "created_at" : "2020-11-27T00:44:14.573-08:00",
-              "updated_at" : "2024-04-21T23:23:09.323-07:00"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          } ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
-      }, {
-        "id" : "9015cbe8-176a-468d-b7a7-dc6b7b598935",
+        "id" : "373d1723-c98d-4cc9-948b-95b68686c5a8",
         "key" : "WF_updatetesting1_0.0.1",
         "segregationKey" : "WF_updatetesting1",
         "componentType" : "WorkFlows",
@@ -16662,7 +16672,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "816cfb31-7a27-465d-bef8-857258c6ad15",
+        "id" : "7f612886-20bf-48ed-9718-78b01bc504c2",
         "key" : "New Worflow_1_TC_179 _0.0.1",
         "segregationKey" : "New Worflow_1_TC_179 ",
         "componentType" : "WorkFlows",
@@ -16716,7 +16726,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "028a56d8-e352-439f-b2c9-7947b069f073",
+        "id" : "4c737b70-5fc9-48a1-b88d-ce0e961d7f46",
         "key" : "Existing workflow_1 _182_0.0.1",
         "segregationKey" : "Existing workflow_1 _182",
         "componentType" : "WorkFlows",
@@ -16770,7 +16780,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "c461c19f-34af-42ad-8632-1b8447b0d378",
+        "id" : "78eb3bee-013e-4233-af66-07666a8a2486",
         "key" : "Applyworkflowconfig template_2024-07-19_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-19",
         "componentType" : "WorkFlows",
@@ -16869,7 +16879,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "c6434975-2b27-4f4a-bb1e-f5b9f20d8a7d",
+        "id" : "be2a0030-7d12-4955-89ba-f426fa2f143b",
         "key" : "Applyworkflowconfig template_2024-07-21_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-21",
         "componentType" : "WorkFlows",
@@ -16968,7 +16978,7 @@
         "error" : "-",
         "templateId" : "316c0814-8dce-4379-b249-4d610a1184dd"
       }, {
-        "id" : "59f08b60-5e3c-4152-8aa9-e3f38c040b3a",
+        "id" : "7c532f4e-09f5-44d3-b0b6-b21d60cda3f7",
         "key" : "Applyworkflowconfig template_2024-07-21_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-21",
         "componentType" : "WorkFlows",
