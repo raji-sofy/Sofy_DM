@@ -2,7 +2,7 @@
   "id" : "7d8a4c95-2376-4037-a744-2bdd648fe74b",
   "name" : "test_sync_workflow5052",
   "description" : "",
-  "status" : "DONE",
+  "status" : "Synced",
   "errors" : "",
   "active" : true,
   "tenantName" : "Rossi Orders Sandbox   (10408) (US-API-Sandbox)",
@@ -10,13 +10,23 @@
   "environment" : "US-API-Sandbox",
   "createdBy" : "Esteban   Felix ",
   "updatedBy" : "Esteban   Felix ",
-  "createdOn" : "2024-08-09T14:03:02.750Z",
+  "createdOn" : "2024-08-09T14:04:59.247Z",
   "type" : "Others",
-  "repo" : false,
+  "repo" : true,
   "connectorId" : null,
   "lessThanMaxPC" : false,
   "structurePresent" : true,
-  "repoDetails" : null,
+  "repoDetails" : {
+    "id" : "e7fededa-b968-452a-b407-a58bf71bb65c",
+    "orgName" : "raji-sofy",
+    "repoName" : "Sofy_DM",
+    "branchName" : "main",
+    "path" : "test",
+    "commitMessage" : "test_before_sync",
+    "error" : null,
+    "status" : "UPLOADED",
+    "commitId" : "816296a8bee9f2021fbdd8cce623c949c843f4c6"
+  },
   "content" : {
     "settings" : [ ],
     "taxation" : [ ],
@@ -13892,442 +13902,7 @@
         "featureDisabled" : false
       },
       "response" : [ {
-        "id" : "ace1df06-0110-4ec1-9102-e0c31c5dca4a",
-        "key" : "Resume Subscriptions for Accounts with Zero Balance Limit 1_0.0.1",
-        "segregationKey" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
-        "componentType" : "WorkFlows",
-        "url" : "1",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 1,
-          "name" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2019-07-26T21:54:02.536-07:00",
-          "updatedAt" : "2019-07-26T21:54:02.536-07:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 1,
-            "name" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
-            "definitionId" : 1,
-            "definitionName" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2019-07-26T21:54:02.536-07:00",
-            "updatedAt" : "2019-07-26T21:54:02.536-07:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "867779cf-d177-4a08-be48-7a7e4e609001",
-        "key" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1_0.0.1",
-        "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
-        "componentType" : "WorkFlows",
-        "url" : "2",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 2,
-          "name" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : "0 0 0 /1 * *",
-          "timezone" : "Eastern Time (US & Canada)",
-          "createdAt" : "2019-07-26T21:54:02.655-07:00",
-          "updatedAt" : "2019-07-26T21:54:02.655-07:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 2,
-            "name" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
-            "definitionId" : 2,
-            "definitionName" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : "0 0 0 /1 * *",
-            "timezone" : "Eastern Time (US & Canada)",
-            "createdAt" : "2019-07-26T21:54:02.655-07:00",
-            "updatedAt" : "2019-07-26T21:54:02.655-07:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "4fb65cb2-a5dc-48fe-9357-c73967fe7d99",
-        "key" : "Invoice 30 Days Past Due, Account Summary_0.0.1",
-        "segregationKey" : "Invoice 30 Days Past Due, Account Summary",
-        "componentType" : "WorkFlows",
-        "url" : "3",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 3,
-          "name" : "Invoice 30 Days Past Due, Account Summary",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : "0 0 3 /1 * *",
-          "timezone" : "Pacific Time (US & Canada)",
-          "createdAt" : "2019-07-26T21:54:02.846-07:00",
-          "updatedAt" : "2019-07-26T21:54:02.846-07:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 3,
-            "name" : "Invoice 30 Days Past Due, Account Summary",
-            "definitionId" : 3,
-            "definitionName" : "Invoice 30 Days Past Due, Account Summary",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : "0 0 3 /1 * *",
-            "timezone" : "Pacific Time (US & Canada)",
-            "createdAt" : "2019-07-26T21:54:02.846-07:00",
-            "updatedAt" : "2019-07-26T21:54:02.846-07:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "cbbb02a5-ca7e-472c-b6b9-d985b7212922",
-        "key" : "Chargebacks -> Write Off Invoice + Cancel Subscription_0.0.1",
-        "segregationKey" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
-        "componentType" : "WorkFlows",
-        "url" : "4",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 4,
-          "name" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
-          "description" : "This workflow would run on a schedule and pick up invoices with a balance that have a tied chargeback refund. Those invoices are written off using InvoiceItemAdjustments and the linked Subscriptions are then cancelled. ",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2019-07-26T21:54:02.965-07:00",
-          "updatedAt" : "2019-07-26T21:54:02.965-07:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 4,
-            "name" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
-            "definitionId" : 4,
-            "definitionName" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
-            "description" : "This workflow would run on a schedule and pick up invoices with a balance that have a tied chargeback refund. Those invoices are written off using InvoiceItemAdjustments and the linked Subscriptions are then cancelled. ",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2019-07-26T21:54:02.965-07:00",
-            "updatedAt" : "2019-07-26T21:54:02.965-07:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "2f2af8a5-3ac8-4255-b4b2-4953c29df28f",
-        "key" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 _0.0.1",
-        "segregationKey" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
-        "componentType" : "WorkFlows",
-        "url" : "5",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 5,
-          "name" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2019-07-26T21:54:03.102-07:00",
-          "updatedAt" : "2019-07-26T21:54:03.102-07:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 5,
-            "name" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
-            "definitionId" : 5,
-            "definitionName" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2019-07-26T21:54:03.102-07:00",
-            "updatedAt" : "2019-07-26T21:54:03.102-07:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "2bdc50ad-8997-4f87-ba3c-c9c605e95d59",
-        "key" : "Uplift Prices for a Subscription_0.0.1",
-        "segregationKey" : "Uplift Prices for a Subscription",
-        "componentType" : "WorkFlows",
-        "url" : "34",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 34,
-          "name" : "Uplift Prices for a Subscription",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2020-11-27T00:45:36.442-08:00",
-          "updatedAt" : "2020-12-18T07:02:02.813-08:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 34,
-            "name" : "Uplift Prices for a Subscription",
-            "definitionId" : 34,
-            "definitionName" : "Uplift Prices for a Subscription",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2020-11-27T00:45:36.442-08:00",
-            "updatedAt" : "2020-12-18T07:02:02.813-08:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "inputFields" : [ {
-              "index" : "0",
-              "default" : "{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  }\r\n  ",
-              "datatype" : "JSON",
-              "required" : true,
-              "callout_id" : "Configuration",
-              "field_name" : "Configuration",
-              "instruction" : "",
-              "object_name" : "Workflow"
-            } ],
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "yizhang@zuora.com",
-              "created_at" : "2020-11-29T19:17:56.739-08:00",
-              "updated_at" : "2021-10-12T16:53:09.128-07:00"
-            }
-          },
-          "latest_inactive_versions" : [ {
-            "id" : 332,
-            "name" : "Uplift Prices for a Subscription",
-            "definitionId" : 34,
-            "definitionName" : "Uplift Prices for a Subscription",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.2",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2022-06-27T22:42:52.337-07:00",
-            "updatedAt" : "2022-06-27T22:42:52.337-07:00",
-            "priority" : "Medium",
-            "status" : "Inactive",
-            "inputFields" : [ {
-              "index" : "0",
-              "default" : "{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  }\r\n  ",
-              "datatype" : "JSON",
-              "required" : true,
-              "callout_id" : "Configuration",
-              "field_name" : "Configuration",
-              "instruction" : "",
-              "object_name" : "Workflow"
-            } ],
-            "created_by" : {
-              "work_email" : "xi.luo@zuora.com",
-              "created_at" : "2020-11-27T00:44:14.573-08:00",
-              "updated_at" : "2024-08-06T23:54:57.519-07:00"
-            },
-            "updated_by" : {
-              "work_email" : "xi.luo@zuora.com",
-              "created_at" : "2020-11-27T00:44:14.573-08:00",
-              "updated_at" : "2024-08-06T23:54:57.519-07:00"
-            }
-          } ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "cb6da8a9-cf22-4b87-aacb-f528b36807ba",
-        "key" : "Uplift Prices for multiple Subscriptions_0.0.1",
-        "segregationKey" : "Uplift Prices for multiple Subscriptions",
-        "componentType" : "WorkFlows",
-        "url" : "166",
-        "pathPattern" : null,
-        "method" : "GET",
-        "payload" : {
-          "id" : 166,
-          "name" : "Uplift Prices for multiple Subscriptions",
-          "description" : "",
-          "status" : "Active",
-          "ondemandTrigger" : true,
-          "calloutTrigger" : true,
-          "scheduledTrigger" : false,
-          "interval" : null,
-          "timezone" : null,
-          "createdAt" : "2020-12-02T18:13:38.379-08:00",
-          "updatedAt" : "2020-12-02T21:56:15.746-08:00",
-          "priority" : "Medium",
-          "active_version" : {
-            "id" : 166,
-            "name" : "Uplift Prices for multiple Subscriptions",
-            "definitionId" : 166,
-            "definitionName" : "Uplift Prices for multiple Subscriptions",
-            "description" : "",
-            "type" : "Workflow::Setup",
-            "version" : "0.0.1",
-            "ondemandTrigger" : true,
-            "calloutTrigger" : true,
-            "scheduledTrigger" : false,
-            "interval" : null,
-            "timezone" : null,
-            "createdAt" : "2020-12-02T18:13:38.379-08:00",
-            "updatedAt" : "2020-12-02T21:56:15.746-08:00",
-            "priority" : "Medium",
-            "status" : "Active",
-            "inputFields" : [ {
-              "index" : "0",
-              "default" : "[{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  },{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000477\",\r\n    \"chargeNumbers\": [\"C-00000919\", \"C-00000920\", \"C-00000921\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.3\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.6\r\n      }\r\n    ]\r\n  }]\r\n  ",
-              "datatype" : "JSON",
-              "required" : true,
-              "callout_id" : "Configurations",
-              "field_name" : "Configurations",
-              "instruction" : "",
-              "object_name" : "Workflow"
-            } ],
-            "created_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            },
-            "updated_by" : {
-              "work_email" : "N/A",
-              "created_at" : "N/A",
-              "updated_at" : "N/A"
-            }
-          },
-          "latest_inactive_versions" : [ ]
-        },
-        "result" : "DONE",
-        "error" : "-",
-        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
-      }, {
-        "id" : "75d02c15-1375-4ca4-838e-6f745f61ec97",
+        "id" : "017fb970-3862-49ca-9c40-602777634be4",
         "key" : "Test 342893_0.0.1",
         "segregationKey" : "Test 342893",
         "componentType" : "WorkFlows",
@@ -14608,7 +14183,442 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "ea568dbe-fcc8-4fba-b628-59d24041300e",
+        "id" : "3274dc30-f1f6-4234-877a-2aff942da2d9",
+        "key" : "Uplift Prices for multiple Subscriptions_0.0.1",
+        "segregationKey" : "Uplift Prices for multiple Subscriptions",
+        "componentType" : "WorkFlows",
+        "url" : "166",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 166,
+          "name" : "Uplift Prices for multiple Subscriptions",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2020-12-02T18:13:38.379-08:00",
+          "updatedAt" : "2020-12-02T21:56:15.746-08:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 166,
+            "name" : "Uplift Prices for multiple Subscriptions",
+            "definitionId" : 166,
+            "definitionName" : "Uplift Prices for multiple Subscriptions",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2020-12-02T18:13:38.379-08:00",
+            "updatedAt" : "2020-12-02T21:56:15.746-08:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "inputFields" : [ {
+              "index" : "0",
+              "default" : "[{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  },{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000477\",\r\n    \"chargeNumbers\": [\"C-00000919\", \"C-00000920\", \"C-00000921\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.3\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.6\r\n      }\r\n    ]\r\n  }]\r\n  ",
+              "datatype" : "JSON",
+              "required" : true,
+              "callout_id" : "Configurations",
+              "field_name" : "Configurations",
+              "instruction" : "",
+              "object_name" : "Workflow"
+            } ],
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "e0efa5fc-e6ea-42dd-a269-53dc1f5c6540",
+        "key" : "Resume Subscriptions for Accounts with Zero Balance Limit 1_0.0.1",
+        "segregationKey" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
+        "componentType" : "WorkFlows",
+        "url" : "1",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 1,
+          "name" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2019-07-26T21:54:02.536-07:00",
+          "updatedAt" : "2019-07-26T21:54:02.536-07:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 1,
+            "name" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
+            "definitionId" : 1,
+            "definitionName" : "Resume Subscriptions for Accounts with Zero Balance Limit 1",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2019-07-26T21:54:02.536-07:00",
+            "updatedAt" : "2019-07-26T21:54:02.536-07:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "43ae16cc-4783-437a-aedd-288c99e13621",
+        "key" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1_0.0.1",
+        "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
+        "componentType" : "WorkFlows",
+        "url" : "2",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 2,
+          "name" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : "0 0 0 /1 * *",
+          "timezone" : "Eastern Time (US & Canada)",
+          "createdAt" : "2019-07-26T21:54:02.655-07:00",
+          "updatedAt" : "2019-07-26T21:54:02.655-07:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 2,
+            "name" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
+            "definitionId" : 2,
+            "definitionName" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : "0 0 0 /1 * *",
+            "timezone" : "Eastern Time (US & Canada)",
+            "createdAt" : "2019-07-26T21:54:02.655-07:00",
+            "updatedAt" : "2019-07-26T21:54:02.655-07:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "c403d127-8518-4cd5-a981-464dbd4c0a70",
+        "key" : "Invoice 30 Days Past Due, Account Summary_0.0.1",
+        "segregationKey" : "Invoice 30 Days Past Due, Account Summary",
+        "componentType" : "WorkFlows",
+        "url" : "3",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 3,
+          "name" : "Invoice 30 Days Past Due, Account Summary",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : "0 0 3 /1 * *",
+          "timezone" : "Pacific Time (US & Canada)",
+          "createdAt" : "2019-07-26T21:54:02.846-07:00",
+          "updatedAt" : "2019-07-26T21:54:02.846-07:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 3,
+            "name" : "Invoice 30 Days Past Due, Account Summary",
+            "definitionId" : 3,
+            "definitionName" : "Invoice 30 Days Past Due, Account Summary",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : "0 0 3 /1 * *",
+            "timezone" : "Pacific Time (US & Canada)",
+            "createdAt" : "2019-07-26T21:54:02.846-07:00",
+            "updatedAt" : "2019-07-26T21:54:02.846-07:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "cc3982ca-744e-4426-b512-a85934acb687",
+        "key" : "Chargebacks -> Write Off Invoice + Cancel Subscription_0.0.1",
+        "segregationKey" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
+        "componentType" : "WorkFlows",
+        "url" : "4",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 4,
+          "name" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
+          "description" : "This workflow would run on a schedule and pick up invoices with a balance that have a tied chargeback refund. Those invoices are written off using InvoiceItemAdjustments and the linked Subscriptions are then cancelled. ",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2019-07-26T21:54:02.965-07:00",
+          "updatedAt" : "2019-07-26T21:54:02.965-07:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 4,
+            "name" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
+            "definitionId" : 4,
+            "definitionName" : "Chargebacks -> Write Off Invoice + Cancel Subscription",
+            "description" : "This workflow would run on a schedule and pick up invoices with a balance that have a tied chargeback refund. Those invoices are written off using InvoiceItemAdjustments and the linked Subscriptions are then cancelled. ",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2019-07-26T21:54:02.965-07:00",
+            "updatedAt" : "2019-07-26T21:54:02.965-07:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "a6d114ba-01df-4e13-a8a4-67b5ed5452a9",
+        "key" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 _0.0.1",
+        "segregationKey" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
+        "componentType" : "WorkFlows",
+        "url" : "5",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 5,
+          "name" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2019-07-26T21:54:03.102-07:00",
+          "updatedAt" : "2019-07-26T21:54:03.102-07:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 5,
+            "name" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
+            "definitionId" : 5,
+            "definitionName" : "Suspend Subscriptions Tied to Unpaid Invoices > 10 Days Limit 1 ",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2019-07-26T21:54:03.102-07:00",
+            "updatedAt" : "2019-07-26T21:54:03.102-07:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            }
+          },
+          "latest_inactive_versions" : [ ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "ee529d5e-375c-474f-9ae0-5c9f7c87586b",
+        "key" : "Uplift Prices for a Subscription_0.0.1",
+        "segregationKey" : "Uplift Prices for a Subscription",
+        "componentType" : "WorkFlows",
+        "url" : "34",
+        "pathPattern" : null,
+        "method" : "GET",
+        "payload" : {
+          "id" : 34,
+          "name" : "Uplift Prices for a Subscription",
+          "description" : "",
+          "status" : "Active",
+          "ondemandTrigger" : true,
+          "calloutTrigger" : true,
+          "scheduledTrigger" : false,
+          "interval" : null,
+          "timezone" : null,
+          "createdAt" : "2020-11-27T00:45:36.442-08:00",
+          "updatedAt" : "2020-12-18T07:02:02.813-08:00",
+          "priority" : "Medium",
+          "active_version" : {
+            "id" : 34,
+            "name" : "Uplift Prices for a Subscription",
+            "definitionId" : 34,
+            "definitionName" : "Uplift Prices for a Subscription",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.1",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2020-11-27T00:45:36.442-08:00",
+            "updatedAt" : "2020-12-18T07:02:02.813-08:00",
+            "priority" : "Medium",
+            "status" : "Active",
+            "inputFields" : [ {
+              "index" : "0",
+              "default" : "{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  }\r\n  ",
+              "datatype" : "JSON",
+              "required" : true,
+              "callout_id" : "Configuration",
+              "field_name" : "Configuration",
+              "instruction" : "",
+              "object_name" : "Workflow"
+            } ],
+            "created_by" : {
+              "work_email" : "N/A",
+              "created_at" : "N/A",
+              "updated_at" : "N/A"
+            },
+            "updated_by" : {
+              "work_email" : "yizhang@zuora.com",
+              "created_at" : "2020-11-29T19:17:56.739-08:00",
+              "updated_at" : "2021-10-12T16:53:09.128-07:00"
+            }
+          },
+          "latest_inactive_versions" : [ {
+            "id" : 332,
+            "name" : "Uplift Prices for a Subscription",
+            "definitionId" : 34,
+            "definitionName" : "Uplift Prices for a Subscription",
+            "description" : "",
+            "type" : "Workflow::Setup",
+            "version" : "0.0.2",
+            "ondemandTrigger" : true,
+            "calloutTrigger" : true,
+            "scheduledTrigger" : false,
+            "interval" : null,
+            "timezone" : null,
+            "createdAt" : "2022-06-27T22:42:52.337-07:00",
+            "updatedAt" : "2022-06-27T22:42:52.337-07:00",
+            "priority" : "Medium",
+            "status" : "Inactive",
+            "inputFields" : [ {
+              "index" : "0",
+              "default" : "{\r\n    \"orderDate\": \"2020-11-01\",\r\n    \"subscriptionNumber\": \"A-S00000473\",\r\n    \"chargeNumbers\": [\"C-00000911\", \"C-00000912\", \"C-00000913\"],\r\n    \"rampIntervals\": [\r\n      {\r\n        \"startDate\": \"2020-11-01\",\r\n        \"endDate\": \"2021-10-31\",\r\n        \"ratioOfBasePrice\": 1\r\n      },\r\n      {\r\n        \"startDate\": \"2021-11-01\",\r\n        \"endDate\": \"2022-10-31\",\r\n        \"ratioOfBasePrice\": 1.1\r\n      },\r\n      {\r\n        \"startDate\": \"2022-11-01\",\r\n        \"endDate\": \"2023-10-31\",\r\n        \"ratioOfBasePrice\": 1.2\r\n      }\r\n    ]\r\n  }\r\n  ",
+              "datatype" : "JSON",
+              "required" : true,
+              "callout_id" : "Configuration",
+              "field_name" : "Configuration",
+              "instruction" : "",
+              "object_name" : "Workflow"
+            } ],
+            "created_by" : {
+              "work_email" : "xi.luo@zuora.com",
+              "created_at" : "2020-11-27T00:44:14.573-08:00",
+              "updated_at" : "2024-08-06T23:54:57.519-07:00"
+            },
+            "updated_by" : {
+              "work_email" : "xi.luo@zuora.com",
+              "created_at" : "2020-11-27T00:44:14.573-08:00",
+              "updated_at" : "2024-08-06T23:54:57.519-07:00"
+            }
+          } ]
+        },
+        "result" : "DONE",
+        "error" : "-",
+        "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
+      }, {
+        "id" : "5b475126-8b97-4841-afc6-595d6ec95567",
         "key" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1_0.0.1",
         "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 10 Days Overdue Limit 1",
         "componentType" : "WorkFlows",
@@ -14689,7 +14699,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "9c512662-43d9-442c-81e2-a1dfdb0c9121",
+        "id" : "5c35c934-70dd-4269-9ed8-e513ac36fa61",
         "key" : "Apply Late Fee to all Subscriptions for Accounts > 1 Days Overdue Limit 1_0.0.1",
         "segregationKey" : "Apply Late Fee to all Subscriptions for Accounts > 1 Days Overdue Limit 1",
         "componentType" : "WorkFlows",
@@ -14804,7 +14814,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "9026f385-c552-408e-8ef1-08ea76ec8c9a",
+        "id" : "ab1546ff-e076-48d2-b80d-7bf3ebbb681c",
         "key" : "C19: Credit Invoices_0.0.1",
         "segregationKey" : "C19: Credit Invoices",
         "componentType" : "WorkFlows",
@@ -14921,7 +14931,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "32c38e17-e97c-4658-934e-0bfad9b41f87",
+        "id" : "ecef0ca6-4500-4166-af34-6a046a7992b2",
         "key" : "Write Off & Cancel Sub Workflow_0.0.1",
         "segregationKey" : "Write Off & Cancel Sub Workflow",
         "componentType" : "WorkFlows",
@@ -15100,7 +15110,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "90448f2c-bd90-424e-bc94-84fa1f927bca",
+        "id" : "65aa4947-8bb7-4f1e-9ad6-bc8ab1698e9b",
         "key" : "Ticket 362841_0.0.1",
         "segregationKey" : "Ticket 362841",
         "componentType" : "WorkFlows",
@@ -15181,7 +15191,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "be663d70-941c-43f4-adc2-bd4fe6c86f68",
+        "id" : "cde54825-4921-4739-98c8-483b1de51587",
         "key" : "Send multiple Invoices in one Email_0.0.1",
         "segregationKey" : "Send multiple Invoices in one Email",
         "componentType" : "WorkFlows",
@@ -15280,7 +15290,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "4899a0d4-4d83-4ab2-a3d9-b639326a291c",
+        "id" : "1a36491b-9d6f-431a-8c6e-fde2d4238583",
         "key" : "Multiple Invoices in single Email_0.0.1",
         "segregationKey" : "Multiple Invoices in single Email",
         "componentType" : "WorkFlows",
@@ -15379,7 +15389,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "6040a171-a1c2-4d60-ada1-6d0c3a8dbb02",
+        "id" : "b2580020-766b-44a5-be9e-6aa56bf1cf9b",
         "key" : "363588 Test_0.0.1",
         "segregationKey" : "363588 Test",
         "componentType" : "WorkFlows",
@@ -15443,7 +15453,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "738abd33-20a9-4913-9f4f-3313aff92f11",
+        "id" : "bead3ecd-83c5-4c0c-82e6-e99d7848c4e0",
         "key" : "Subscription Cancellation Workflow_0.0.1",
         "segregationKey" : "Subscription Cancellation Workflow",
         "componentType" : "WorkFlows",
@@ -15634,7 +15644,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "a89fd22d-4298-4b19-9473-883ef23ac017",
+        "id" : "b2234360-9e8b-4531-a3c2-ec54ea448cbb",
         "key" : "SNP_ZUO_CoolingOffDeactivation_0.0.1",
         "segregationKey" : "SNP_ZUO_CoolingOffDeactivation",
         "componentType" : "WorkFlows",
@@ -15733,7 +15743,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "20880669-5e8a-416d-b9f6-ea0a8b99cfc1",
+        "id" : "e69fa0bd-a6ec-48d2-b7bf-52571e2ee83b",
         "key" : "SNP_ZUO_CoolingOffDeactivation_TEST_0.0.1",
         "segregationKey" : "SNP_ZUO_CoolingOffDeactivation_TEST",
         "componentType" : "WorkFlows",
@@ -15796,7 +15806,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "696329ac-a466-4c95-b4c2-8fb704029c81",
+        "id" : "59b7eb7c-a8fb-4de2-830f-9c473a1c0b5f",
         "key" : "myworkflow_0.0.1",
         "segregationKey" : "myworkflow",
         "componentType" : "WorkFlows",
@@ -15877,7 +15887,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "f750e795-3ec1-48af-a308-92ad90787e61",
+        "id" : "363ea266-8fd8-476e-a4a0-1484539bff0c",
         "key" : "test ui role_0.0.1",
         "segregationKey" : "test ui role",
         "componentType" : "WorkFlows",
@@ -15966,7 +15976,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "e0af3fb9-a664-41f8-ba0a-fdccedab9693",
+        "id" : "2290485d-e3b6-4102-b40a-5cb66d844059",
         "key" : "acc-standard_0.0.1",
         "segregationKey" : "acc-standard",
         "componentType" : "WorkFlows",
@@ -16055,7 +16065,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "6a291003-457b-4875-8dd8-17f9bad23f84",
+        "id" : "0a5ea2b3-f012-4298-9c0a-7861689fd2b8",
         "key" : "acc-custom_0.0.1",
         "segregationKey" : "acc-custom",
         "componentType" : "WorkFlows",
@@ -16144,7 +16154,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "b06c0d3e-b80a-4418-a89c-fcf9f1e2884f",
+        "id" : "cd42c585-a8fd-443e-99bc-a52e57ec3d3b",
         "key" : "acc-empty_0.0.1",
         "segregationKey" : "acc-empty",
         "componentType" : "WorkFlows",
@@ -16233,7 +16243,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "2a78d367-3165-44c9-9c47-f15cae68c1c6",
+        "id" : "1bfb546b-b08b-4f61-92b2-98ec4675411b",
         "key" : "acc-both_0.0.1",
         "segregationKey" : "acc-both",
         "componentType" : "WorkFlows",
@@ -16322,7 +16332,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "fc78d9ee-8f81-41fa-aac5-29df72100caa",
+        "id" : "f06b336f-3ace-44e6-9089-d02033091edf",
         "key" : "Carrier Tip Export_0.0.1",
         "segregationKey" : "Carrier Tip Export",
         "componentType" : "WorkFlows",
@@ -16403,7 +16413,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "a3d2c28e-6029-4e4f-82bf-3140826a057d",
+        "id" : "4ce9b929-d5b9-4ead-bd25-a39d71127c2d",
         "key" : "Cancel & Refund Subscription_459928_0.0.1",
         "segregationKey" : "Cancel & Refund Subscription_459928",
         "componentType" : "WorkFlows",
@@ -16502,7 +16512,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "f20cc8ce-08b9-474f-a2c3-c461e6a05c0e",
+        "id" : "e785afc8-14f2-479f-a8b9-9ceb269573b3",
         "key" : "Create Lockbox Payments_0.0.1",
         "segregationKey" : "Create Lockbox Payments",
         "componentType" : "WorkFlows",
@@ -16599,7 +16609,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "2a6b59a6-54e7-4f46-b592-e4722ca418ef",
+        "id" : "9b8bf226-60f5-4a99-849d-7de34bcd6d53",
         "key" : "WF_updatetesting1_0.0.1",
         "segregationKey" : "WF_updatetesting1",
         "componentType" : "WorkFlows",
@@ -16662,7 +16672,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "39b118b8-e6b9-4ca9-89d9-6773d77752fc",
+        "id" : "07003ef3-6778-4490-ad1a-fc188d55f354",
         "key" : "New Worflow_1_TC_179 _0.0.1",
         "segregationKey" : "New Worflow_1_TC_179 ",
         "componentType" : "WorkFlows",
@@ -16716,7 +16726,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "42ad2a8b-9f4f-4369-b510-201b67dc9ef8",
+        "id" : "833df01e-7e3c-4528-b0c8-ee1e7b6c673e",
         "key" : "Existing workflow_1 _182_0.0.1",
         "segregationKey" : "Existing workflow_1 _182",
         "componentType" : "WorkFlows",
@@ -16770,7 +16780,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "6c2b7906-29f5-4611-9789-1339164a3b84",
+        "id" : "6e7fb505-5256-40f7-a29e-bcd773a18051",
         "key" : "Applyworkflowconfig template_2024-07-19_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-19",
         "componentType" : "WorkFlows",
@@ -16869,7 +16879,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "03f14370-3fb8-4dc3-a3bc-6fb4c10477ec",
+        "id" : "08631b59-2857-4203-a141-b361a84e7f3d",
         "key" : "Applyworkflowconfig template_2024-07-21_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-21",
         "componentType" : "WorkFlows",
@@ -16968,7 +16978,7 @@
         "error" : "-",
         "templateId" : "7d8a4c95-2376-4037-a744-2bdd648fe74b"
       }, {
-        "id" : "3fc9c9e4-9f28-4656-a342-2aceb626b1c4",
+        "id" : "edcb229e-1718-4aaf-8e2d-87314c9bc4e8",
         "key" : "Applyworkflowconfig template_2024-07-21_0.0.1",
         "segregationKey" : "Applyworkflowconfig template_2024-07-21",
         "componentType" : "WorkFlows",
